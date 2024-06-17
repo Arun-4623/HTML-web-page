@@ -1,0 +1,42 @@
+<html>
+    <body>
+        <script>
+        function swap(){
+            var a=document.getElementById("val1").value;
+            var b=document.getElementById("val2").value;
+            var temp;
+            temp=a;
+            a=b;
+            b=temp;
+            if(a=="")
+            {
+                document.getElementById('l2').innerHTML="*enter value";
+            }
+
+            if(b==""){
+                document.getElementById('l1').innerHTML="*enter value";
+            }
+            document.getElementById("val1").value=a;
+            document.getElementById("val2").value=b;
+            
+        }
+        </script>
+        <table>
+            <tr>
+                <td>first: <input type="text" id="val1"></td>
+            </tr>
+            <tr>
+                <td><label style="color: red;" id="l1"></label></td> 
+            </tr>
+            <tr>
+                <td>second: <input type="text" id="val2"></td>
+            </tr>
+            <tr>
+                <td><label style="color: red;" id="l2"></label></td> 
+            </tr>
+            <tr>
+                <td><input type="submit" value="swap" onclick="swap()"></td>
+            </tr>
+        </table>
+    </body>
+</html>

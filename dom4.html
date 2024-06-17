@@ -1,0 +1,18 @@
+<html>
+    <body>
+        
+        <input type="text" id="fn">
+        <input type="text" id="sn">
+        <button type="button" onclick="add()"> + </button>
+        <p id="output"></p>
+        <script>
+            function add(){
+                var firstNo=parseFloat(document.getElementById("fn").value);
+                var secondNo=parseFloat(document.getElementById("sn").value);
+                var sum=firstNo+secondNo;
+                document.getElementById("output").innerHTML=sum;
+             }
+        </script>
+     
+    </body>
+</html>

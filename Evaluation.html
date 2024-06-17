@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="evaluation.css">
+    </head>
+    <body>
+        <header>
+            <h1>ADDITION</h1>
+        </header>
+    <script>
+        function addition(){
+            var nu1=document.getElementById("n1").value;
+            var nu2=document.getElementById("n2").value;
+            var num1=parseFloat(nu1);
+            var num2=parseFloat(nu2);
+            if(nu1=="")
+            {
+                document.getElementById('l1').innerHTML="*Enter a number";
+            }
+            else if(isNaN(nu1))
+            {
+                document.getElementById('l1').innerHTML="*Enter a valid number";
+            }
+            if(nu2=="")
+            {
+                document.getElementById('l2').innerHTML="*Enter a number";
+            }
+            else if(isNaN(nu2))
+            {
+                document.getElementById('l2').innerHTML="*Enter a valid number";
+            }
+
+
+            var sum=num1+num2;
+            document.getElementById("nos").innerHTML=sum;
+        }
+    </script>
+    <table>
+        <tr>
+            <td>First number:<input type="text" id="n1"></td>
+        </tr>
+            <td><label id="l1"></label></td>
+        <tr>
+            <td>Second number:<input type="text" id="n2"></td>
+        </tr>
+            <td><label id="l2"></label></td>
+        <tr>
+            <td><input type="submit" onclick="addition()"></td>
+        </tr>
+        <tr>
+            <td>Sum of numbers : <label id="nos"></label></td>
+        </tr>
+    </table>
+    <footer>This page is created by az developement department.</footer>
+    </body>
+</html>

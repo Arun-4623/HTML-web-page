@@ -1,0 +1,15 @@
+header{
+    color: rgb(254, 213, 10);
+    background-color: rgb(49, 4, 79);
+    display: block;
+    text-align: center;
+}
+footer{
+    display: block;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+label{
+    color: red;
+}

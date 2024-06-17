@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>validate</title>
+    </head>
+    <body>
+        <script>
+            function validate(){
+            var name=document.getElementById("name").value;
+            var letters=/^[a-zA-Z\s]+$/;
+            
+            
+            if(name==""){
+                document.getElementById('l1').innerHTML="*enter name";
+            } 
+            else if(letters.test(name)==false)
+            {
+                document.getElementById("l1").innerHTML="*enter valid alphabets"
+            }
+           
+            
+        }
+        </script>
+    <form>
+        <table>
+            <tr>
+                <td><label>Name:</label><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <td><label style="color: red;" id="l1"></label></td> 
+            </tr>
+            
+            <tr>
+            <td><button type="button" onclick="validate()">reg</button></td>
+            </tr>
+        </table>
+    </form>
+    </body>
+</html>
